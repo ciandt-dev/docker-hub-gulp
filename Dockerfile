@@ -14,7 +14,7 @@ RUN apt-get update && apt-get upgrade --assume-yes && apt-get install --no-insta
 
 ### specific configuration
 # gulp variables
-ENV _GULP_VERSION 1.2.1
+ENV _GULP_VERSION 2.0.1
 
 # install libraries
 RUN apt-get install --no-install-recommends --assume-yes \
@@ -24,7 +24,7 @@ RUN apt-get install --no-install-recommends --assume-yes \
 RUN npm install --global gulp-cli@$_GULP_VERSION
 
 # install scss-lint
-RUN gem install scss_lint
+# RUN gem install scss_lint
 
 # copy entrypoint scripts
 COPY files/docker-entrypoint.sh /entrypoint.sh
