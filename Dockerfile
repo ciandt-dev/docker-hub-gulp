@@ -24,7 +24,7 @@ RUN apt-get install --no-install-recommends --assume-yes \
 RUN npm install --global gulp-cli@$_GULP_VERSION
 
 # install scss-lint
-RUN gem install scss_lint
+RUN gem install scss_lint -v 0.55.0
 
 # copy entrypoint scripts
 COPY files/docker-entrypoint.sh /entrypoint.sh
