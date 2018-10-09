@@ -1,4 +1,4 @@
-FROM node:6.1.0-slim
+FROM node:8.12.0-slim
 
 ### baseline configuration for all debian/ubuntu dockers
 # use bash, no dash
